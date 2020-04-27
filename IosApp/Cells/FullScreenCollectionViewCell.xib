@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FullScreenCollectionViewCell" customModule="IosApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="253" height="171"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="253" height="171"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8vH-1Y-tax">
+                        <rect key="frame" x="0.0" y="0.0" width="253" height="171"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="biI-87-ejv">
+                                <rect key="frame" x="0.0" y="0.0" width="288" height="189.5"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="biI-87-ejv" secondAttribute="bottom" id="I8A-nt-KiI"/>
+                            <constraint firstItem="biI-87-ejv" firstAttribute="top" secondItem="8vH-1Y-tax" secondAttribute="top" id="WPO-1p-j5o"/>
+                            <constraint firstAttribute="width" secondItem="biI-87-ejv" secondAttribute="width" multiplier="0.879121" id="ech-qi-Cso"/>
+                            <constraint firstAttribute="height" secondItem="biI-87-ejv" secondAttribute="height" multiplier="0.901408" id="fNd-km-HCM"/>
+                            <constraint firstAttribute="trailing" secondItem="biI-87-ejv" secondAttribute="trailing" id="rvs-43-LOP"/>
+                            <constraint firstItem="biI-87-ejv" firstAttribute="leading" secondItem="8vH-1Y-tax" secondAttribute="leading" id="zYP-WK-6co"/>
+                        </constraints>
+                        <viewLayoutGuide key="contentLayoutGuide" id="otA-9a-uAs"/>
+                        <viewLayoutGuide key="frameLayoutGuide" id="x4o-5R-1fF"/>
+                    </scrollView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="8vH-1Y-tax" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="5eN-We-HDK"/>
+                <constraint firstAttribute="bottom" secondItem="8vH-1Y-tax" secondAttribute="bottom" id="fnv-a3-FGZ"/>
+                <constraint firstAttribute="trailing" secondItem="8vH-1Y-tax" secondAttribute="trailing" id="jIs-tf-sT7"/>
+                <constraint firstItem="8vH-1Y-tax" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="jYg-1x-LRl"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="253" height="171"/>
+            <connections>
+                <outlet property="photoView" destination="biI-87-ejv" id="79Z-2f-HD6"/>
+                <outlet property="scrollView" destination="8vH-1Y-tax" id="tu4-Jp-LWc"/>
+            </connections>
+            <point key="canvasLocation" x="318.11594202898556" y="155.02232142857142"/>
+        </collectionViewCell>
+    </objects>
+</document>
